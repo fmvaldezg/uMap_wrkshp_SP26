@@ -3,7 +3,7 @@
 theme: seriph
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: ./assets/cover.jpeg
+background: /assets/cover.jpeg
 # some information about your slides (markdown enabled)
 title: uMap Workshop
 info: |
@@ -43,7 +43,7 @@ Using uMap
 </div>
 
 <img 
-  src="./assets/Logo_uMap_01.png" 
+  src="/assets/Logo_uMap_01.png" 
   class="absolute"
   style="left: 675px; top: 300px; width: 250px; background-color: rgba(255, 255, 255, 0.7); padding: 10px; border-radius: 8px;"
   alt="uMap logo"
@@ -119,7 +119,7 @@ A web map is an interactive map delivered over the internet through a web browse
 ::right::
 
 <div class="h-full flex items-center justify-center">
-  <img src="./assets/map1.png" class="max-w-full max-h-100 object-contain" />
+  <img src="/assets/map1.png" class="max-w-full max-h-100 object-contain" />
 </div>
 
 <style>
@@ -164,7 +164,7 @@ h1 {
 
 ---
 layout: image-right
-image: ./assets/umap_web.png
+image: /assets/umap_web.png
 backgroundSize: contain
 ---
 
@@ -232,7 +232,7 @@ layout: default
 
 --- 
 layout: image
-image: ./assets/view_mode.png
+image: /assets/view_mode.png
 backgroundSize: contain
 --- 
 
@@ -256,7 +256,7 @@ h1 {
 
 --- 
 layout: image
-image: ./assets/edit_mode.png
+image: /assets/edit_mode.png
 backgroundSize: contain
 --- 
 
@@ -280,7 +280,7 @@ h1 {
 
 --- 
 layout: image-right
-image: ./assets/first.gif
+image: /assets/first.gif
 backgroundSize: contain
 --- 
 
@@ -306,7 +306,7 @@ h1 {
 ---
 layout: image
 transition: slide-up
-image: ./assets/workshoppromo.png
+image: /assets/workshoppromo.png
 --- 
 
 --- 
