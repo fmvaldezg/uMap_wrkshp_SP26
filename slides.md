@@ -50,11 +50,8 @@ Using uMap
 />
 
 <div class="abs-br m-6 text-xl">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="slidev-icon-btn">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
-    <carbon:logo-github />
+  <a href="https://charlesstudy.temple.edu/calendar/workshops?&t=g&d=0000-00-00&cal%5B%5D=6197&ct%5B%5D=69157" title="More Workshops" target="_blank" class="slidev-icon-btn">
+    <carbon:information />
   </a>
 </div>
 
@@ -71,13 +68,13 @@ transition: fade-out
 <br>
 
 - 🤨 **What are Webmaps?** - WebMapping basics
-- 💡 **Why use uMap?** - 
-- 📺 **uMap interface** - code highlighting, live coding with autocompletion
-- 🧑🏽‍💻 **Creating your first map** - embed Vue components to enhance your expressions
-- 📍 **Creating data** - built-in recording and camera view
-- 🎨 **Styling your map** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 📲 **Importing / Exporting data** - virtually anything that's possible on a webpage is possible in Slidev
-- 🌎 **Sharing your map** - virtually anything that's possible on a webpage is possible in Slidev
+- 💡 **Why use uMap?** - uMap features
+- 📺 **uMap interface** - view vs. edit mode
+- 🧑🏽‍💻 **Creating your first map** - Adding a title, description and layout.
+- 📍 **Creating data** - Adding points, lines or poligons. Adding features.
+- 🎨 **Styling your map** - Changing icons, colors and stiles. 
+- 📲 **Importing / Exporting data** - import a file or a url. 
+- 🌎 **Sharing your map** - sharing a link, embeding the map or printing.
 
 <br>
 <br>
@@ -167,35 +164,23 @@ h1 {
 
 ---
 layout: image-right
-image: https://cover.sli.dev
+image: ./assets/umap_web.png
+backgroundSize: contain
 ---
 
-# Code
+# Why use uMap?
 
-Use code snippets and get the highlighting directly, and even types hover!
-
-```ts [filename-example.ts] {all|4|6|6-7|9|all} twoslash
-// TwoSlash enables TypeScript hover information
-// and errors in markdown code blocks
-// More at https://shiki.style/packages/twoslash
-import { computed, ref } from 'vue'
-
-const count = ref(0)
-const doubled = computed(() => count.value * 2)
-
-doubled.value = 2
-```
-
-<arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="342" color="#953" width="2" arrowSize="1" />
-
-<!-- This allow you to embed external code blocks -->
-<<< @/snippets/external.ts#snippet
+1. **Free and Open Source** - no licensing costs
+2. **Quick and Easy** - build maps without coding skills  
+3. **Privacy Focused** - anonymous creation, no personal data required
+4. **Collaborative** - high interoperability
+5. **Rich Customization** - markers, polygons, heatmaps, storytelling
+6. **Easy Embedding** - works on any website
+7. **Built on OpenStreetMap** - open geographic data
 
 <!-- Footer -->
+[Learn more](https://umap-project.org/)
 
-[Learn more](https://sli.dev/features/line-highlighting)
-
-<!-- Inline style -->
 <style>
 .footnotes-sep {
   @apply mt-5 opacity-10;
@@ -208,14 +193,134 @@ doubled.value = 2
 }
 </style>
 
-<!--
-Notes can also sync with clicks
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, rgb(127, 58, 79) 10%, rgb(61, 36, 78) 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
 
-[click] This will be highlighted after the first click
+--- 
+layout: section
+---
 
-[click] Highlighted with `count = ref(0)`
+# [Hands on](https://umap.openstreetmap.fr/en/map/anonymous-edit/1351201:bpyjlr8apj2HygdyNpFlK5CpZbJZknjfejkwACH3CFQ)
 
-[click:3] Last click (skip two clicks)
--->
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, rgb(127, 58, 79) 10%, rgb(61, 36, 78) 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+layout: default
+--- 
+
+<iframe style="width: 100%; height: 450px; border: 0;" allowfullscreen allow="geolocation" src="//umap.openstreetmap.fr/en/map/a-map-of-philadelphia_1351615?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=null&captionBar=false&captionMenus=false"></iframe><p><a href="//umap.openstreetmap.fr/en/map/a-map-of-philadelphia_1351615?scaleControl=false&miniMap=false&scrollWheelZoom=true&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=caption&captionBar=false&captionMenus=true">See full screen</a></p>
 
 
+--- 
+layout: image
+image: ./assets/view_mode.png
+backgroundSize: contain
+--- 
+
+# View Mode
+
+<style>
+h1 {
+  background-color: rgba(248, 248, 248, 0.7);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-align: center;
+  position: absolute;
+  bottom: 2rem;
+  right: 6rem;
+  margin: 0;
+  max-width: fit-content;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  color: #333333;
+}
+</style>
+
+--- 
+layout: image
+image: ./assets/edit_mode.png
+backgroundSize: contain
+--- 
+
+# Edit Mode
+
+<style>
+h1 {
+  background-color: rgba(248, 248, 248, 0.7);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-align: center;
+  position: absolute;
+  bottom: 2rem;
+  right: 6rem;
+  margin: 0;
+  max-width: fit-content;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  color: #333333;
+}
+</style>
+
+--- 
+layout: image-right
+image: ./assets/first.gif
+backgroundSize: contain
+--- 
+
+# Creating your first map
+
+1. Head to [https://umap-project.org/](https://umap-project.org/)
+2. Click on 'Create a map'
+3. Choose an instance (FR recommended)
+4. Start editing your map
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, rgb(127, 58, 79) 10%, rgb(61, 36, 78) 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+layout: image
+transition: slide-up
+image: ./assets/workshoppromo.png
+--- 
+
+--- 
+layout: end
+---
+
+Contact us at:\
+felipe.valdez@temple.edu \
+<br>
+Visit our guides:\
+https://guides.temple.edu/gis-mapping
+
+<style>
+.slidev-layout.end {
+  background: linear-gradient(135deg, rgb(164, 30, 53) 0%, rgb(149, 56, 71) 100%);
+}
+</style>
