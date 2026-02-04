@@ -306,6 +306,12 @@ h1 {
 ---
 layout: image
 transition: slide-up
+image: /assets/mapathon.png
+--- 
+
+---
+layout: image
+transition: slide-up
 image: /assets/workshoppromo.png
 --- 
 
